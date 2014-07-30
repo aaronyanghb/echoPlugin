@@ -1,4 +1,4 @@
-var echoPlugin = {
+var echo = {
     sendMessage: function(message, callback) {
         cordova.exec(
         	callback, // success callback function
@@ -9,5 +9,3 @@ var echoPlugin = {
         ); 
      }
 }
-
-module.exports = echo;
