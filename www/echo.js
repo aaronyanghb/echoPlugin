@@ -9,3 +9,5 @@ var echoPlugin = {
         ); 
      }
 }
+
+module.exports = echo;
