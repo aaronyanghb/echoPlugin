@@ -18,7 +18,6 @@ public class Echo extends CordovaPlugin{
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("echo".equals(action)) {
             this.echo(args.getString(0),callbackContext);
-            callbackContext.success();
             return true;
         }
         return false;  // Returning false results in a "MethodNotFound" error.
